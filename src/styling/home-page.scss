@@ -1,0 +1,145 @@
+@import "_variables";
+
+body {
+    font-family: "Arial";
+    background-color: $background-color;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-message {
+    padding: 20px;
+    text-align: center;
+    h1 {
+        font-weight: bold;
+        font-size: 5vmin;
+        color: #fff;
+        margin: 20px;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+}
+
+.create-project {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+    .new-project-button {
+        background: #a44eeb;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #551c85;
+        }
+    }
+}
+
+.projects-list {
+    list-style: none;
+    padding: 30px;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 5px;
+    @media screen and (max-width: 850px) {
+        width: 80%;
+    }
+    span {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+        color: $border-color;
+    }
+
+    li {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff0a;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid $border-color;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        a {
+            padding: 3px 0;
+            text-decoration: none;
+            color: #6bd498;
+            &:hover {
+                text-decoration: underline;
+                color: #2b32ff;
+            }
+        }
+        &:hover {
+            background-color: $background-color;
+            .edit-button {
+                visibility: visible;
+            }
+        }
+        .edit-button {
+            visibility: hidden;
+            opacity: 0.6;
+            padding: 2px;
+            border-radius: 4px;
+            cursor: pointer;
+            &:hover {
+                background-color: #ffffff3f;
+            }
+        }
+        .edit-button .icon {
+            display: block;
+            width: 12px;
+            height: 12px;
+        }
+    }
+    .placeholder {
+        font-size: 0.8rem;
+        font-style: italic;
+        margin: 15px 0;
+        color: rgba($border-color, 0.7);
+    }
+}
+.add-project-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    .title-input {
+        padding: 9px;
+        font-size: 1rem;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        &:focus {
+            outline: 1px solid #fff;
+        }
+    }
+    .buttons {
+        input,
+        span {
+            padding: 11px;
+            font-size: 1rem;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .save {
+            background-color: rgb(30, 187, 30);
+            margin-right: 4px;
+        }
+        .cancel {
+            background-color: #fff;
+        }
+    }
+}

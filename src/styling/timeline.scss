@@ -1,0 +1,59 @@
+@import "variables";
+.timeline {
+    width: fit-content;
+}
+.timeline .years {
+    display: flex;
+    margin: 5px;
+}
+.timeline .year {
+    font-size: 1.1rem;
+    color: $border-color;
+    font-weight: bold;
+}
+.timeline .months {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    margin-top: 0;
+    .month {
+        color: $border-color;
+        font-weight: bold;
+        position: relative;
+        padding: 5px 0;
+        padding-bottom: 20px;
+        margin: 7px 0;
+        border-bottom: 2px solid $border-color;
+    }
+    .day {
+        position: absolute;
+        background-color: $border-color;
+        width: 1px;
+        bottom: -8px;
+        height: 8px;
+        .day-number {
+            position: absolute;
+            font-size: 0.7rem;
+            top: -15px;
+            left: 2px;
+        }
+    }
+    // .days {
+    //     position: relative;
+    //     border-bottom: 2px solid $border-color;
+    //     margin: 20px 0 7px 0;
+    //     .day {
+    //         height: 9px;
+    //         width: 2px;
+    //         background-color: $border-color;
+    //         position: absolute;
+    //         top: 0;
+    //     }
+    //     .day-number {
+    //         font-size: 0.7rem;
+    //         position: absolute;
+    //         top: -15px;
+    //         left: 3px;
+    //     }
+    // }
+}
