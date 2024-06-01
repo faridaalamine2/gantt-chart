@@ -5,16 +5,16 @@ const initialState = {
         {
             id: 0,
             title: "project 1",
-            startDate: "2024-02-20",
-            endDate: "2024-04-22",
-            duration: 61,
+            startDate: "2024-05-30",
+            endDate: "2024-07-31",
+            duration: 62,
         },
         {
             id: 1,
             title: "project 2",
             startDate: "2024-02-20",
-            endDate: "2024-04-22",
-            duration: 61,
+            endDate: "2024-07-31",
+            duration: 62,
         },
     ],
 };
